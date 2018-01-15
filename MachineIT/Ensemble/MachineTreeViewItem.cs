@@ -9,11 +9,11 @@ using System.Windows.Media.Imaging;
 
 namespace MachineIT
 {
-    class EnsembleTreeViewItem: ProjectTreeViewItem
+    class MachineTreeViewItem: ProjectTreeViewItem
     {
-        public EnsembleTreeViewItem(string _text): base(_text, new Uri("images/RoueVisSansFin.png", UriKind.Relative))
+        public MachineTreeViewItem(string _text): base(_text, new Uri("Images/DossierJaune.png", UriKind.Relative))
         {
-
+            IsExpanded = true;
        
         }
            

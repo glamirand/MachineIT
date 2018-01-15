@@ -24,20 +24,45 @@ namespace MachineIT
         {
             InitializeComponent();
 
+            //Création de données
+            Machine Ma1 = new Machine("9999_01", "Machine 1");
+            for (int i = 0; i < 2; i++)
+            {
+                Ensemble Ens = new Ensemble("Ensemble " + i);
+                Ma1.Ensembles.Add(Ens);
+                for (int j = 0; j < 3; j++)
+                {
+                    SousEnsemble SEns = new SousEnsemble("Sous-ensemble " + i + "/" + j);
+                    for (int k = 0; k < 4; k++)
+                    {
+                        Piece Piece = new Piece("Pièce " + i + "/" + j + "/" + k);
+                        SEns.Composants.Add(Piece);
+                    }
+                    Ens.Composants.Add(SEns);
 
-            TreeViewItem machine = new TreeViewItem();
-            machine.Header = "Machine";
+                }
+            }
+
+            //Affichage
+
+            MachineTreeViewItem machine = new MachineTreeViewItem("Machine");
             tvMachine.Items.Add(machine);
-            machine.IsExpanded = true;
 
-
-            EnsembleTreeViewItem Ensemble = new EnsembleTreeViewItem();
-            Ensemble.Text = "Ensemble 1";
-            machine.Items.Add(Ensemble);
-
-            EnsembleTreeViewItem Ens = new EnsembleTreeViewItem();
-            Ens.Text = "Test d'ensemble";
-            machine.Items.Add(Ens);
+            foreach (Ensemble ensembl in Ma1.Ensembles)
+            {
+                EnsembleTreeViewItem Ensemble = new EnsembleTreeViewItem(ensembl.Reference);
+                machine.Items.Add(Ensemble);
+                foreach (SousEnsemble Sens in ensembl.Composants)
+                {
+                    EnsembleTreeViewItem SEnsemble = new EnsembleTreeViewItem(Sens.Numero);
+                    Ensemble.Items.Add(SEnsemble);
+                    foreach (Piece piece in Sens.Composants)
+                    {
+                        PieceTreeViewItem pIece = new PieceTreeViewItem(piece.Reference);
+                        SEnsemble.Items.Add(pIece);
+                    }
+                }
+            }
 
         }
     }

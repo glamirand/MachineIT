@@ -47,3 +47,8 @@ C:\Users\glamirand\Documents\4_Perso\Projets\MachineIT\MachineIT\bin\Debug\Image
 C:\Users\glamirand\Documents\4_Perso\Projets\MachineIT\MachineIT\bin\Debug\Images\Pignon.png
 C:\Users\glamirand\Documents\4_Perso\Projets\MachineIT\MachineIT\bin\Debug\Images\RoueVisSansFin.png
 C:\Users\glamirand\Documents\4_Perso\Projets\MachineIT\MachineIT\obj\Debug\MachineIT_Content.g.cs
+C:\Users\Gaël LAMIRAND\Documents\Projets\MachineIT\MachineIT\bin\Debug\Images\DossierVert.png
+C:\Users\Gaël LAMIRAND\Documents\Projets\MachineIT\MachineIT\bin\Debug\Images\DossierJaune.png
+C:\Users\Gaël LAMIRAND\Documents\Projets\MachineIT\MachineIT\bin\Debug\Images\Pignon.png
+C:\Users\Gaël LAMIRAND\Documents\Projets\MachineIT\MachineIT\bin\Debug\Images\RoueVisSansFin.png
+C:\Users\Gaël LAMIRAND\Documents\Projets\MachineIT\MachineIT\obj\Debug\MachineIT_Content.g.cs

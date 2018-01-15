@@ -9,9 +9,9 @@ using System.Windows.Media.Imaging;
 
 namespace MachineIT
 {
-    class EnsembleTreeViewItem: ProjectTreeViewItem
+    class PieceTreeViewItem: ProjectTreeViewItem
     {
-        public EnsembleTreeViewItem(string _text): base(_text, new Uri("images/RoueVisSansFin.png", UriKind.Relative))
+        public PieceTreeViewItem(string _text): base(_text, new Uri("images/Pignon.png", UriKind.Relative))
         {
 
        

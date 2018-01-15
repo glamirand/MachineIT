@@ -67,7 +67,15 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Effecteurs\Effecteur.cs" />
+    <Compile Include="Ensemble\Composant.cs" />
+    <Compile Include="Ensemble\Ensemble.cs" />
+    <Compile Include="Ensemble\PieceTreeViewItem.cs" />
+    <Compile Include="Ensemble\Machine.cs" />
+    <Compile Include="Ensemble\MachineTreeViewItem.cs" />
+    <Compile Include="Ensemble\Piece.cs" />
+    <Compile Include="Ensemble\ProjectTreeViewItem.cs" />
     <Compile Include="Ensemble\EnsembleTreeViewItem.cs" />
+    <Compile Include="Ensemble\SousEnsemble.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
