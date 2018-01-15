@@ -1,0 +1,15 @@
+C:\Users\Gaël LAMIRAND\source\repos\MachineIT\MachineIT\bin\Debug\MachineIT.exe.config
+C:\Users\Gaël LAMIRAND\source\repos\MachineIT\MachineIT\bin\Debug\MachineIT.exe
+C:\Users\Gaël LAMIRAND\source\repos\MachineIT\MachineIT\bin\Debug\MachineIT.pdb
+C:\Users\Gaël LAMIRAND\source\repos\MachineIT\MachineIT\obj\Debug\MachineIT.csprojResolveAssemblyReference.cache
+C:\Users\Gaël LAMIRAND\source\repos\MachineIT\MachineIT\obj\Debug\MainWindow.g.cs
+C:\Users\Gaël LAMIRAND\source\repos\MachineIT\MachineIT\obj\Debug\App.g.cs
+C:\Users\Gaël LAMIRAND\source\repos\MachineIT\MachineIT\obj\Debug\MachineIT_MarkupCompile.cache
+C:\Users\Gaël LAMIRAND\source\repos\MachineIT\MachineIT\obj\Debug\MachineIT_MarkupCompile.lref
+C:\Users\Gaël LAMIRAND\source\repos\MachineIT\MachineIT\obj\Debug\MainWindow.baml
+C:\Users\Gaël LAMIRAND\source\repos\MachineIT\MachineIT\obj\Debug\MachineIT.g.resources
+C:\Users\Gaël LAMIRAND\source\repos\MachineIT\MachineIT\obj\Debug\MachineIT.Properties.Resources.resources
+C:\Users\Gaël LAMIRAND\source\repos\MachineIT\MachineIT\obj\Debug\MachineIT.csproj.GenerateResource.Cache
+C:\Users\Gaël LAMIRAND\source\repos\MachineIT\MachineIT\obj\Debug\MachineIT.csproj.CoreCompileInputs.cache
+C:\Users\Gaël LAMIRAND\source\repos\MachineIT\MachineIT\obj\Debug\MachineIT.exe
+C:\Users\Gaël LAMIRAND\source\repos\MachineIT\MachineIT\obj\Debug\MachineIT.pdb
