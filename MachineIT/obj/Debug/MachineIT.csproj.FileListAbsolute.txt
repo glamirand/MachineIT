@@ -28,3 +28,22 @@ C:\Users\Gaël LAMIRAND\Documents\Projets\MachineIT\MachineIT\obj\Debug\MachineI
 C:\Users\Gaël LAMIRAND\Documents\Projets\MachineIT\MachineIT\obj\Debug\MachineIT.csproj.CoreCompileInputs.cache
 C:\Users\Gaël LAMIRAND\Documents\Projets\MachineIT\MachineIT\obj\Debug\MachineIT.exe
 C:\Users\Gaël LAMIRAND\Documents\Projets\MachineIT\MachineIT\obj\Debug\MachineIT.pdb
+C:\Users\glamirand\Documents\4_Perso\Projets\MachineIT\MachineIT\bin\Debug\MachineIT.exe.config
+C:\Users\glamirand\Documents\4_Perso\Projets\MachineIT\MachineIT\obj\Debug\MachineIT.exe
+C:\Users\glamirand\Documents\4_Perso\Projets\MachineIT\MachineIT\obj\Debug\MachineIT.pdb
+C:\Users\glamirand\Documents\4_Perso\Projets\MachineIT\MachineIT\bin\Debug\MachineIT.exe
+C:\Users\glamirand\Documents\4_Perso\Projets\MachineIT\MachineIT\bin\Debug\MachineIT.pdb
+C:\Users\glamirand\Documents\4_Perso\Projets\MachineIT\MachineIT\obj\Debug\MachineIT.csprojResolveAssemblyReference.cache
+C:\Users\glamirand\Documents\4_Perso\Projets\MachineIT\MachineIT\obj\Debug\MainWindow.g.cs
+C:\Users\glamirand\Documents\4_Perso\Projets\MachineIT\MachineIT\obj\Debug\App.g.cs
+C:\Users\glamirand\Documents\4_Perso\Projets\MachineIT\MachineIT\obj\Debug\MachineIT_MarkupCompile.cache
+C:\Users\glamirand\Documents\4_Perso\Projets\MachineIT\MachineIT\obj\Debug\MachineIT_MarkupCompile.lref
+C:\Users\glamirand\Documents\4_Perso\Projets\MachineIT\MachineIT\obj\Debug\MainWindow.baml
+C:\Users\glamirand\Documents\4_Perso\Projets\MachineIT\MachineIT\obj\Debug\MachineIT.g.resources
+C:\Users\glamirand\Documents\4_Perso\Projets\MachineIT\MachineIT\obj\Debug\MachineIT.Properties.Resources.resources
+C:\Users\glamirand\Documents\4_Perso\Projets\MachineIT\MachineIT\obj\Debug\MachineIT.csproj.GenerateResource.Cache
+C:\Users\glamirand\Documents\4_Perso\Projets\MachineIT\MachineIT\bin\Debug\Images\DossierVert.png
+C:\Users\glamirand\Documents\4_Perso\Projets\MachineIT\MachineIT\bin\Debug\Images\DossierJaune.png
+C:\Users\glamirand\Documents\4_Perso\Projets\MachineIT\MachineIT\bin\Debug\Images\Pignon.png
+C:\Users\glamirand\Documents\4_Perso\Projets\MachineIT\MachineIT\bin\Debug\Images\RoueVisSansFin.png
+C:\Users\glamirand\Documents\4_Perso\Projets\MachineIT\MachineIT\obj\Debug\MachineIT_Content.g.cs

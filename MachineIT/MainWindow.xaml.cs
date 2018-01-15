@@ -23,6 +23,22 @@ namespace MachineIT
         public MainWindow()
         {
             InitializeComponent();
+
+
+            TreeViewItem machine = new TreeViewItem();
+            machine.Header = "Machine";
+            tvMachine.Items.Add(machine);
+            machine.IsExpanded = true;
+
+
+            EnsembleTreeViewItem Ensemble = new EnsembleTreeViewItem();
+            Ensemble.Text = "Ensemble 1";
+            machine.Items.Add(Ensemble);
+
+            EnsembleTreeViewItem Ens = new EnsembleTreeViewItem();
+            Ens.Text = "Test d'ensemble";
+            machine.Items.Add(Ens);
+
         }
     }
 }
