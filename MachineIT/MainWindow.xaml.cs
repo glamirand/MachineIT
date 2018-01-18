@@ -25,7 +25,10 @@ namespace MachineIT
             InitializeComponent();
 
             //Création de données
+            #region Génération
+            List<Machine> Machines = new List<Machine>();
             Machine Ma1 = new Machine("9999_01", "Machine 1");
+            Machines.Add(Ma1);
             for (int i = 0; i < 2; i++)
             {
                 Ensemble Ens = new Ensemble("Ensemble " + i);
@@ -42,8 +45,11 @@ namespace MachineIT
 
                 }
             }
+            #endregion
 
             //Affichage
+            #region Affichage
+
 
             MachineTreeViewItem machine = new MachineTreeViewItem("Machine");
             tvMachine.Items.Add(machine);
@@ -63,7 +69,10 @@ namespace MachineIT
                     }
                 }
             }
+            #endregion
 
+            TVTest.ItemsSource = Machines;
         }
+
     }
 }

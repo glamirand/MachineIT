@@ -20,5 +20,6 @@ namespace MachineIT
         }
 
         public List<Ensemble> Ensembles { get => ensembles; set => ensembles = value; }
+        public string Numero { get => numero; set => numero = value; }
     }
 }
