@@ -72,7 +72,26 @@ namespace MachineIT
             #endregion
 
             TVTest.ItemsSource = Machines;
+            
         }
 
+        private void TVTest_SelectedItemChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
+        {
+            switch ((((TreeView)sender).SelectedItem).GetType().ToString()) 
+                
+            {
+                case "MachineIT.Machine":
+                    MessageBox.Show(((Machine)(((TreeView)sender).SelectedItem)).Numero);
+                break;
+
+                case "MachineIT.Ensemble":
+                    MessageBox.Show(((Ensemble)(((TreeView)sender).SelectedItem)).Reference);
+                    break;
+                default: 
+MessageBox.Show((((TreeView)sender).SelectedItem).GetType().ToString());
+                    break;
+            }
+            
+        }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MachineIT"
         mc:Ignorable="d"
-        Title="MachineIT" Height="350" Width="525">
+        Title="MachineIT" Height="526.591" Width="712.727">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
@@ -30,11 +30,12 @@
             <TreeView x:Name="tvMachine" Grid.Row="1" Grid.Column="0"/>
             <GridSplitter HorizontalAlignment="Right" VerticalAlignment="Stretch" Grid.Column="1" ResizeBehavior="PreviousAndNext" Width="5" Background="Gray"/>
             <!--<Frame Grid.Column="2" Grid.Row="0"/>-->
-            <TreeView Name="TVTest" Grid.Column="2" Grid.Row="0">
+            <TreeView Name="TVTest" Grid.Column="2" Grid.Row="0" SelectedItemChanged="TVTest_SelectedItemChanged">
                 <TreeView.Resources>
                     <HierarchicalDataTemplate DataType="{x:Type local:Machine}" ItemsSource="{Binding Ensembles}">
                         <StackPanel Orientation="Horizontal">
                             <!--<Image Source="/WpfTutorialSamples;component/Images/group.png" Margin="0,0,5,0" />-->
+                            <TextBlock Text="Machine : " />
                             <TextBlock Text="{Binding Numero}" />
                             <TextBlock Text=" [" Foreground="Blue" />
                             <TextBlock Text="{Binding Ensembles.Count}" Foreground="Blue" />
@@ -43,6 +44,7 @@
                     </HierarchicalDataTemplate>
                     <HierarchicalDataTemplate DataType="{x:Type local:Ensemble}" ItemsSource="{Binding Composants}">
                         <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Ensemble : " />
                             <!--<Image Source="/WpfTutorialSamples;component/Images/group.png" Margin="0,0,5,0" />-->
                             <TextBlock Text="{Binding Reference}" />
                             <TextBlock Text=" [" Foreground="Blue" />
@@ -52,6 +54,7 @@
                     </HierarchicalDataTemplate>
                     <HierarchicalDataTemplate DataType="{x:Type local:SousEnsemble}" ItemsSource="{Binding Composants}">
                         <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Sous-Ensemble : " />
                             <!--<Image Source="/WpfTutorialSamples;component/Images/group.png" Margin="0,0,5,0" />-->
                             <TextBlock Text="{Binding Numero}" />
                             <TextBlock Text=" [" Foreground="Blue" />
@@ -61,6 +64,7 @@
                     </HierarchicalDataTemplate>
                     <DataTemplate DataType="{x:Type local:Piece}">
                         <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Pièce : " />
                             <!--<Image Source="/WpfTutorialSamples;component/Images/user.png" Margin="0,0,5,0" />-->
                             <TextBlock Text="{Binding Reference}" />
                             <TextBlock Text=" (" Foreground="Green" />
@@ -70,7 +74,7 @@
                     </DataTemplate>
 
                 </TreeView.Resources>
-            
+
 
             </TreeView>
         </Grid>
