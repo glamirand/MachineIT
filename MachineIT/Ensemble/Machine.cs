@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MachineIT
 { 
-    class Machine
+    public class Machine
     {
         string numero;
         string libele;

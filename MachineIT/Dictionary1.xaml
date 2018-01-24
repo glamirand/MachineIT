@@ -1,0 +1,64 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:MachineIT">
+ 
+        <HierarchicalDataTemplate DataType="{x:Type local:Machine}" ItemsSource="{Binding Ensembles}">
+            <StackPanel Orientation="Horizontal">
+                <!--<Image Source="/WpfTutorialSamples;component/Images/group.png" Margin="0,0,5,0" />-->
+                <TextBlock Text="Machine : " />
+                <TextBlock Text="{Binding Numero}" />
+                <TextBlock Text=" [" Foreground="Blue" />
+                <TextBlock Text="{Binding Ensembles.Count}" Foreground="Blue" />
+                <TextBlock Text="]" Foreground="Blue" />
+            </StackPanel>
+        </HierarchicalDataTemplate>
+        <HierarchicalDataTemplate DataType="{x:Type local:Ensemble}" ItemsSource="{Binding Composants}">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Ensemble : " />
+                <!--<Image Source="/WpfTutorialSamples;component/Images/group.png" Margin="0,0,5,0" />-->
+                <TextBlock Text="{Binding Reference}" />
+                <TextBlock Text=" [" Foreground="Blue" />
+                <TextBlock Text="{Binding Composants.Count}" Foreground="Blue" />
+                <TextBlock Text="]" Foreground="Blue" />
+            </StackPanel>
+        </HierarchicalDataTemplate>
+        <HierarchicalDataTemplate DataType="{x:Type local:SousEnsemble}" ItemsSource="{Binding Composants}">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Sous-Ensemble : " />
+                <!--<Image Source="/WpfTutorialSamples;component/Images/group.png" Margin="0,0,5,0" />-->
+                <TextBlock Text="{Binding Numero}" />
+                <TextBlock Text=" [" Foreground="Blue" />
+                <TextBlock Text="{Binding Composants.Count}" Foreground="Blue" />
+                <TextBlock Text="]" Foreground="Blue" />
+            </StackPanel>
+        </HierarchicalDataTemplate>
+        <DataTemplate DataType="{x:Type local:Piece}">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Pièce : " />
+                <!--<Image Source="/WpfTutorialSamples;component/Images/user.png" Margin="0,0,5,0" />-->
+                <TextBlock Text="{Binding Reference}" />
+                <TextBlock Text=" (" Foreground="Green" />
+                <!--<TextBlock Text="{Binding Age}" Foreground="Green" />-->
+                <TextBlock Text=" years)" Foreground="Green" />
+            </StackPanel>
+        </DataTemplate>
+
+    <!--<DataTemplate x:Key="BaseClass">
+        --><!-- base class template here --><!--
+    </DataTemplate>
+    
+    <DataTemplate DataType="{x:Type App:BaseClass}">
+        <ContentPresenter Content="{Binding}" 
+                    ContentTemplate="{StaticResource BaseClass}"/>
+    </DataTemplate>
+    
+    <DataTemplate DataType="{x:Type App:DerivedClass}">
+        <StackPanel>
+            <ContentPresenter Content="{Binding}" 
+                      ContentTemplate="{StaticResource BaseClass}"/>
+            --><!-- derived class extra template here --><!--
+        </StackPanel>
+    </DataTemplate>-->
+
+
+</ResourceDictionary>

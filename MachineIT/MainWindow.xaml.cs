@@ -45,12 +45,17 @@ namespace MachineIT
 
                 }
             }
+            Machine Ma2 = new Machine("1234_00", "Machine 2");
+            Ma2 = Ma1 ;
+            Machines.Add(Ma2);
+            Ma2.Numero = "1122_00";
             #endregion
 
             //Affichage
             #region Affichage
 
-
+            if (false)
+            {
             MachineTreeViewItem machine = new MachineTreeViewItem("Machine");
             tvMachine.Items.Add(machine);
 
@@ -69,27 +74,50 @@ namespace MachineIT
                     }
                 }
             }
+            }
+
             #endregion
 
-            TVTest.ItemsSource = Machines;
+            // TVTest.ItemsSource = Machines;
+            tvMachine.DataContext = Machines;
             
         }
 
         private void TVTest_SelectedItemChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
         {
-            switch ((((TreeView)sender).SelectedItem).GetType().ToString()) 
-                
-            {
-                case "MachineIT.Machine":
-                    MessageBox.Show(((Machine)(((TreeView)sender).SelectedItem)).Numero);
-                break;
+            object selectedObject = ((TreeView)sender).SelectedItem;
 
-                case "MachineIT.Ensemble":
-                    MessageBox.Show(((Ensemble)(((TreeView)sender).SelectedItem)).Reference);
-                    break;
-                default: 
-MessageBox.Show((((TreeView)sender).SelectedItem).GetType().ToString());
-                    break;
+            if (selectedObject is Machine)
+            {
+                Machine machine = (Machine)selectedObject;
+                frameContent.Content = new PageMachine(machine);
+                frameContent.DataContext = machine;
+               // MessageBox.Show("Machine n° : " + machine.Numero);
+            }
+            else if(selectedObject is Ensemble)
+            {
+                Ensemble ensemble = (Ensemble)selectedObject;
+                frameContent.Content = new PageEnsemble();
+               // MessageBox.Show("Ensemble : " + ensemble.Nom);
+            }
+            else if (selectedObject is SousEnsemble)
+            {
+                SousEnsemble sousensemble = (SousEnsemble)selectedObject;
+                MessageBox.Show("SousEnsemble : " + sousensemble.Numero);
+            }
+            else if (selectedObject is Piece)
+            {
+                Piece piece = (Piece)selectedObject;
+                MessageBox.Show("Pièce : " + piece.Reference);
+            }
+            else if (selectedObject is Composant)
+            {
+                Composant composant = (Composant)selectedObject;
+                MessageBox.Show("Composant");
+            }
+            else
+            {
+                MessageBox.Show("Autre!");
             }
             
         }

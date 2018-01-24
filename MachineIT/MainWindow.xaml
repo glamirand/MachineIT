@@ -27,56 +27,13 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <TreeView x:Name="tvMachine" Grid.Row="1" Grid.Column="0"/>
-            <GridSplitter HorizontalAlignment="Right" VerticalAlignment="Stretch" Grid.Column="1" ResizeBehavior="PreviousAndNext" Width="5" Background="Gray"/>
-            <!--<Frame Grid.Column="2" Grid.Row="0"/>-->
-            <TreeView Name="TVTest" Grid.Column="2" Grid.Row="0" SelectedItemChanged="TVTest_SelectedItemChanged">
-                <TreeView.Resources>
-                    <HierarchicalDataTemplate DataType="{x:Type local:Machine}" ItemsSource="{Binding Ensembles}">
-                        <StackPanel Orientation="Horizontal">
-                            <!--<Image Source="/WpfTutorialSamples;component/Images/group.png" Margin="0,0,5,0" />-->
-                            <TextBlock Text="Machine : " />
-                            <TextBlock Text="{Binding Numero}" />
-                            <TextBlock Text=" [" Foreground="Blue" />
-                            <TextBlock Text="{Binding Ensembles.Count}" Foreground="Blue" />
-                            <TextBlock Text="]" Foreground="Blue" />
-                        </StackPanel>
-                    </HierarchicalDataTemplate>
-                    <HierarchicalDataTemplate DataType="{x:Type local:Ensemble}" ItemsSource="{Binding Composants}">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Ensemble : " />
-                            <!--<Image Source="/WpfTutorialSamples;component/Images/group.png" Margin="0,0,5,0" />-->
-                            <TextBlock Text="{Binding Reference}" />
-                            <TextBlock Text=" [" Foreground="Blue" />
-                            <TextBlock Text="{Binding Composants.Count}" Foreground="Blue" />
-                            <TextBlock Text="]" Foreground="Blue" />
-                        </StackPanel>
-                    </HierarchicalDataTemplate>
-                    <HierarchicalDataTemplate DataType="{x:Type local:SousEnsemble}" ItemsSource="{Binding Composants}">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Sous-Ensemble : " />
-                            <!--<Image Source="/WpfTutorialSamples;component/Images/group.png" Margin="0,0,5,0" />-->
-                            <TextBlock Text="{Binding Numero}" />
-                            <TextBlock Text=" [" Foreground="Blue" />
-                            <TextBlock Text="{Binding Composants.Count}" Foreground="Blue" />
-                            <TextBlock Text="]" Foreground="Blue" />
-                        </StackPanel>
-                    </HierarchicalDataTemplate>
-                    <DataTemplate DataType="{x:Type local:Piece}">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Pièce : " />
-                            <!--<Image Source="/WpfTutorialSamples;component/Images/user.png" Margin="0,0,5,0" />-->
-                            <TextBlock Text="{Binding Reference}" />
-                            <TextBlock Text=" (" Foreground="Green" />
-                            <!--<TextBlock Text="{Binding Age}" Foreground="Green" />-->
-                            <TextBlock Text=" years)" Foreground="Green" />
-                        </StackPanel>
-                    </DataTemplate>
-
+            <TreeView x:Name="tvMachine" Grid.Row="1" Grid.Column="0" ItemsSource="{Binding}" SelectedItemChanged="TVTest_SelectedItemChanged">
+            <TreeView.Resources>
+                             <ResourceDictionary Source="Dictionary1.xaml"/>
                 </TreeView.Resources>
-
-
             </TreeView>
+            <GridSplitter HorizontalAlignment="Right" VerticalAlignment="Stretch" Grid.Column="1" ResizeBehavior="PreviousAndNext" Width="5" Background="Gray"/>
+            <Frame x:Name="frameContent" Grid.Column="2" Grid.Row="0" NavigationUIVisibility="Hidden"/>
         </Grid>
     </Grid>
 

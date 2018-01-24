@@ -55,6 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Dictionary1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -80,8 +84,22 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PageEnsemble.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageMachine.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PageEnsemble.xaml.cs">
+      <DependentUpon>PageEnsemble.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageMachine.xaml.cs">
+      <DependentUpon>PageMachine.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PreActionneurs\Distributeur.cs" />
     <Compile Include="PreActionneurs\PreActionneur.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
